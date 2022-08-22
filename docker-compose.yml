@@ -1,8 +1,9 @@
 version: '3'
 services:
-  python:
+  sqs_put:
     build: .
     container_name: python
     volumes:
       - ./app:/opt/app
+      - ./.aws:/root/.aws
     entrypoint: /opt/app/start.sh

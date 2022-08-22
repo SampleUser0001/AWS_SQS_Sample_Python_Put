@@ -6,6 +6,13 @@ from enum import Enum
 
 class ImportEnvKeyEnum(Enum):
   """ .envファイルのキーを書く """
+  SQS_URL="SQS_URL"
+  SQS_GROUP_ID="SQS_GROUP_ID"
+  USE_PROFILE="use_profile"
+  PROFILE="profile"
+  AWS_ACCESS_KEY_ID = "aws_access_key_id"
+  AWS_SECRET_ACCESS_KEY = "aws_secret_access_key"
+  REGION_NAME = "region_name"
 
 load_dotenv(verbose=True)
 
